@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="register">
+
+
+      <!-- <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div> -->
+
+
+
+      <div class="wrapper">
+        <form action="#" id="registration-form">
+          <!-- <h2>Register</h2> -->
+            <div class="profile-picture">
+              <img id="uploadPreview" src="./rec/profile.svg" />
+              <input
+                id="uploadImage"
+                onchange="PreviewImage();"
+                title="Select profile-picture"
+                type="file"
+                name="uploadImage"
+                accept="image/*" />
+                <p class="error-message"></p>
+            </div>
+          <div class="input-field">
+            <input type="text" id="name" name="name" value="" pattern="[a-z]+" />
+            <span class="error-message"></span>
+            <label
+              ><i class="fa-solid fa-user" for="name"></i> Enter your
+              Name</label
+            >
+          </div>
+          <div class="input-field">
+            <input type="text" id="email" name="email" />
+            <span class="error-message"></span>
+            <label for="email"
+              ><i class="fa-solid fa-envelope"></i> Enter your email</label
+            >
+          </div>
+          <div class="input-field">
+            <input
+              type="tel"
+              class="numbers"
+              maxlength="10"
+              id="mobileNumber"
+              name="mobileNumber" />
+            <span class="error-message"></span>
+            <label for="mobileNumber"
+              ><i class="fa-solid fa-address-book"></i> Enter Phone No.</label
+            >
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="" /><span class="error-message"></span>
+            <label for="address"
+              ><i class="fa-solid fa-location-dot"></i> Address:</label
+            >
+          </div>
+          <div class="input-field gender">
+            <label for="gender"><i class="fa-solid fa-venus-mars"></i></label>
+            <select id="gender" name="gender">
+              <option for="gender" value="">Gender:</option>
+              <option for="gender" value="male">Male</option>
+              <option for="gender" value="female">Female</option>
+              <option for="gender" value="other">Other</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
